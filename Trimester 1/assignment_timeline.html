@@ -1,0 +1,169 @@
+
+<style>
+  .timeline { padding: 1rem 0; }
+  .week-header { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin: 1.5rem 0 0.5rem; }
+  .day-row { display: grid; grid-template-columns: 90px 1fr; gap: 12px; align-items: start; margin-bottom: 10px; }
+  .day-label { font-size: 13px; font-weight: 500; color: var(--color-text-primary); padding-top: 6px; }
+  .day-date { font-size: 11px; color: var(--color-text-secondary); }
+  .tasks { display: flex; flex-direction: column; gap: 6px; }
+  .task { border-radius: 8px; padding: 8px 12px; font-size: 13px; border: 0.5px solid; }
+  .task-title { font-weight: 500; margin-bottom: 2px; }
+  .task-desc { font-size: 12px; }
+  .t-viz { background: #E6F1FB; border-color: #85B7EB; color: #0C447C; }
+  .t-prep { background: #E1F5EE; border-color: #5DCAA5; color: #085041; }
+  .t-feat { background: #FAEEDA; border-color: #EF9F27; color: #633806; }
+  .t-smi { background: #EEEDFE; border-color: #AFA9EC; color: #3C3489; }
+  .t-git { background: #F1EFE8; border-color: #B4B2A9; color: #444441; }
+  .deadline-bar { background: #FCEBEB; border: 0.5px solid #F09595; border-radius: 8px; padding: 10px 14px; margin-top: 1.5rem; color: #791F1F; font-size: 13px; font-weight: 500; }
+  .legend { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1.5rem; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--color-text-secondary); }
+  .legend-dot { width: 10px; height: 10px; border-radius: 3px; }
+  .off-day { color: var(--color-text-secondary); font-style: italic; font-size: 12px; padding-top: 6px; }
+</style>
+<div class="timeline">
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#378ADD;"></div>Data Visualization</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#1D9E75;"></div>Data Preprocessing</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#EF9F27;"></div>Feature Engineering</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#7F77DD;"></div>Statistical Modeling</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#888780;"></div>GitHub</div>
+  </div>
+
+  <div class="week-header">Week 1 — Mar 17 to Mar 21</div>
+
+  <div class="day-row">
+    <div><div class="day-label">Monday</div><div class="day-date">Mar 17</div></div>
+    <div class="tasks">
+      <div class="task t-viz"><div class="task-title">Data Visualization — Setup</div><div class="task-desc">Get VAHAN dataset, explore data, identify key metrics</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Tuesday</div><div class="day-date">Mar 18</div></div>
+    <div class="tasks">
+      <div class="task t-viz"><div class="task-title">Data Visualization — Charts</div><div class="task-desc">Build 4 required visualizations in Power BI</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Wednesday</div><div class="day-date">Mar 19</div></div>
+    <div class="tasks">
+      <div class="task t-viz"><div class="task-title">Data Visualization — Dashboard</div><div class="task-desc">Design final dashboard, add drill-downs, polish look</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Thursday</div><div class="day-date">Mar 20</div></div>
+    <div class="tasks">
+      <div class="task t-prep"><div class="task-title">Data Preprocessing — Setup</div><div class="task-desc">Download FIFA/Laptop dataset, Task A: explore & describe data</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Friday</div><div class="day-date">Mar 21</div></div>
+    <div class="tasks">
+      <div class="task t-viz"><div class="task-title">Data Visualization — Finalize & Push to GitHub</div><div class="task-desc">Review, push to GitHub, write README</div></div>
+      <div class="task t-git"><div class="task-title">GitHub — Push Visualization Assignment</div><div class="task-desc">Create repo: Vehicle-Registration-Analysis</div></div>
+    </div>
+  </div>
+
+  <div class="week-header">Week 2 — Mar 24 to Mar 28</div>
+
+  <div class="day-row">
+    <div><div class="day-label">Monday</div><div class="day-date">Mar 24</div></div>
+    <div class="tasks">
+      <div class="task t-prep"><div class="task-title">Data Preprocessing — Task B & C</div><div class="task-desc">Data quality analysis, missing values, duplicates, noise detection</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Tuesday</div><div class="day-date">Mar 25</div></div>
+    <div class="tasks">
+      <div class="task t-prep"><div class="task-title">Data Preprocessing — Task D</div><div class="task-desc">Encoding, feature scaling, feature engineering</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Wednesday</div><div class="day-date">Mar 26</div></div>
+    <div class="tasks">
+      <div class="task t-prep"><div class="task-title">Data Preprocessing — Task E, F, G</div><div class="task-desc">Train/test split, final dataset, pipeline documentation</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Thursday</div><div class="day-date">Mar 27</div></div>
+    <div class="tasks">
+      <div class="task t-prep"><div class="task-title">Data Preprocessing — Report & Finalize</div><div class="task-desc">Write PDF report (max 6 pages), clean up notebook</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Friday</div><div class="day-date">Mar 28</div></div>
+    <div class="tasks">
+      <div class="task t-feat"><div class="task-title">Feature Engineering — Setup</div><div class="task-desc">Load Loan Risk dataset, Task 1: EDA & visualizations</div></div>
+      <div class="task t-git"><div class="task-title">GitHub — Push Preprocessing Assignment</div><div class="task-desc">Create repo: Data-Preprocessing-Assignment</div></div>
+    </div>
+  </div>
+
+  <div class="week-header">Week 3 — Mar 31 to Apr 4</div>
+
+  <div class="day-row">
+    <div><div class="day-label">Monday</div><div class="day-date">Mar 31</div></div>
+    <div class="tasks">
+      <div class="task t-feat"><div class="task-title">Feature Engineering — Task 2 & 3</div><div class="task-desc">Data cleaning, numeric transformations (scaling, binning, log)</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Tuesday</div><div class="day-date">Apr 1</div></div>
+    <div class="tasks">
+      <div class="task t-feat"><div class="task-title">Feature Engineering — Task 4 & 5</div><div class="task-desc">Feature construction (ratios, interactions), categorical encoding</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Wednesday</div><div class="day-date">Apr 2</div></div>
+    <div class="tasks">
+      <div class="task t-feat"><div class="task-title">Feature Engineering — Task 6, 7 & 8</div><div class="task-desc">Feature selection, multicollinearity analysis, PCA/dimensionality reduction</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Thursday</div><div class="day-date">Apr 3</div></div>
+    <div class="tasks">
+      <div class="task t-smi"><div class="task-title">Statistical Modeling — Setup</div><div class="task-desc">Load Insurance/Mall dataset, Part 1: EDA & data preparation</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Friday</div><div class="day-date">Apr 4</div></div>
+    <div class="tasks">
+      <div class="task t-feat"><div class="task-title">Feature Engineering — Report & Finalize</div><div class="task-desc">Write 1-2 page PDF report, clean notebook</div></div>
+      <div class="task t-git"><div class="task-title">GitHub — Push Feature Engineering</div><div class="task-desc">Create repo: Feature-Engineering-Assignment</div></div>
+    </div>
+  </div>
+
+  <div class="week-header">Week 4 — Apr 7 to Apr 11</div>
+
+  <div class="day-row">
+    <div><div class="day-label">Monday</div><div class="day-date">Apr 7</div></div>
+    <div class="tasks">
+      <div class="task t-smi"><div class="task-title">Statistical Modeling — Part 2</div><div class="task-desc">Regression or clustering models, validation & comparison</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Tuesday</div><div class="day-date">Apr 8</div></div>
+    <div class="tasks">
+      <div class="task t-smi"><div class="task-title">Statistical Modeling — Part 3</div><div class="task-desc">Interpretation, insights, limitations & recommendations</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Wednesday</div><div class="day-date">Apr 9</div></div>
+    <div class="tasks">
+      <div class="task t-smi"><div class="task-title">Statistical Modeling — Finalize</div><div class="task-desc">Clean notebook, organize structure, write summary</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Thursday</div><div class="day-date">Apr 10</div></div>
+    <div class="tasks">
+      <div class="task t-smi"><div class="task-title">Statistical Modeling — Review & Buffer</div><div class="task-desc">Final review of all 4 assignments, fix any issues</div></div>
+      <div class="task t-git"><div class="task-title">GitHub — Push Statistical Modeling</div><div class="task-desc">Create repo: Statistical-Modeling-Assignment</div></div>
+    </div>
+  </div>
+  <div class="day-row">
+    <div><div class="day-label">Friday</div><div class="day-date">Apr 11</div></div>
+    <div class="tasks">
+      <div class="task t-git"><div class="task-title">Buffer Day — Final Submissions</div><div class="task-desc">Submit all assignments, verify everything is on GitHub</div></div>
+    </div>
+  </div>
+
+  <div class="deadline-bar">⚠ Deadline: Sunday 12th April 2026, 11:59 PM — all 4 assignments due!</div>
+</div>
